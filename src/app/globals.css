@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bgtop-lines {
+    background-image: url('../../public/images/bg-hero.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+  }
+.bgtop-lines-s {
+    background-image: url('../../public/images/bg-hero.png');
+    background-position: left;
+    background-repeat: repeat;
+  }
