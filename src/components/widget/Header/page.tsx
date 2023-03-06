@@ -2,23 +2,30 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { images } from "../../../../public/constants";
 
 export default function Header() {
+  
   const [customNavbar, setCustomNavbar] = useState(false);
-
-  const changeBackground = () => {
-    if (typeof window !== undefined) {
-      if (window.scrollY >= 80) {
-        setCustomNavbar(true);
-      } else {
-        setCustomNavbar(false);
+  
+  function changeBackground (){
+    console.log(window.scrollY);
+    
+     if (typeof window !== undefined) {
+       if (window.scrollY >= 80) {
+         setCustomNavbar(true);
+       } else {
+         setCustomNavbar(false);
+       }
       }
-    }
+    
   };
-  window.addEventListener("scroll", changeBackground);
+  
+  useEffect(()=>{
+    window.addEventListener("scroll", changeBackground);
+  }, [customNavbar])
 
   return (
     <header
@@ -26,7 +33,7 @@ export default function Header() {
         customNavbar ? "bg-white" : "bg-transparent"
       } w-full flex justify-center ${
         customNavbar ? "sticky" : "relative"
-      } top-0 transition-all ${customNavbar ? "" : "bgtop-lines-s"} `}
+      } top-0 transition-colors ${customNavbar ? "" : "bgtop-lines-s"} `}
     >
       <section className="flex justify-between items-center w-[1200px]">
         <Link href={"/"}>
