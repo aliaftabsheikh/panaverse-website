@@ -1,5 +1,3 @@
-"use client"
-
 import Header from '@/components/widget/Header/page'
 import './globals.css'
 import dynamic from 'next/dynamic'
