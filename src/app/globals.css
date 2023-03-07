@@ -3,13 +3,31 @@
 @tailwind utilities;
 
 
-.bgtop-lines {
-    background-image: url('../../public/images/bg-hero.png');
-    background-position: cover;
-    background-repeat: no-repeat;
+
+
+  .navTransition{
+    transition: 0.2s ease-in-out;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-.bgtop-lines-s {
-    background-image: url('../../public/images/bg-hero.png');
-    background-position: left;
-    background-repeat: repeat;
+
+
+  .blurBlueCircle{
+    width: 90px;
+    height: 90px;
+    filter: blur(44px);
+    background-color: #3c9fb7;
+    border-radius: 50%;
+  }
+  .blurGreenCircle{
+    width: 90px;
+    height: 90px;
+    filter: blur(44px);
+    background-color: #45d56b;
+    border-radius: 50%;
+  }
+
+  .btngradient{
+      background: linear-gradient(270deg, #44DA64 0%, #6366FF 100%)
+      /* linear-gradient(to right, #0EB7A3 0%, #09D58F 100%); */
   }
