@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@chakra-ui/react";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChakraProvider } from "@chakra-ui/react";
 
 import { images } from "../../../../public/constants";
 
@@ -38,79 +39,54 @@ export default function Header() {
   ];
 
   return (
-    <header
-      className={`${
-        customNavbar
-          ? "bg-[#ffffffe5]  backdrop-blur-xl"
-          : "bg-transparent"
-      } w-full flex justify-center ${
-        customNavbar ? "sticky" : "relative"
-      } top-0 navTransition
+    <ChakraProvider>
+      <header
+        className={`${
+          customNavbar ? "bg-[#ffffffe5]  backdrop-blur-xl" : "bg-[#021327] "
+        } w-full flex justify-center ${
+          customNavbar ? "sticky" : "relative"
+        } top-0 navTransition ${customNavbar ? "z-20" : "z-0"}
        `}
-    >
-      <section className="flex justify-between items-center w-[1280px] px-6 py-2">
-        <Link href={"/"}>
-          <Image
-            className="w-32 md:w-28 xs:w-24"
-            src={
-              customNavbar ? images.panaverseLogo : images.panaverseLogoWhite
-            }
-            alt="panaverse-logo"
-          />
-        </Link>
-
-        <div
-          className={`flex items-center ${
-            customNavbar ? "text-black" : "text-white"
-          } space-x-4 md:space-x-6 text-sm font-semibold`}
-        >
-          <Link href={"/"} className="px-5 cursor-pointer md:px-0">
-            <Button
-              px={0}
-              className="text-lg xl:text-[16px] md:text-sm"
-              _hover={{ bg: "transparent" }}
-              _active={{ bg: "transparent" }}
-              bgColor={"transparent"}
-            >
-              Home
-            </Button>
+      >
+        <section className="flex justify-between items-center w-[1280px] px-6 py-2">
+          <Link href={"/"}>
+            <Image
+              className="w-32 md:w-28 xs:w-24"
+              src={
+                customNavbar ? images.panaverseLogo : images.panaverseLogoWhite
+              }
+              alt="panaverse-logo"
+            />
           </Link>
-          <Menu>
-            <MenuButton
-              as={Button}
-              px={0}
-              width="auto"
-              _hover={{ bg: "transparent" }}
-              _active={{ bg: "transparent" }}
-              className="text-lg xl:text-[16px]  sm:px-0 md:text-sm"
-              bgColor={"transparent"}
-              rightIcon={<ChevronDownIcon />}
-            >
-              Tracks
-            </MenuButton>
-            <MenuList
-              padding={"10px 0"}
-              bgColor="rgba(255,255,255,1)"
-              className="sm:w-[100vw] sm:text-sm sm:rounded-none rounded-lg  border-blue-100 border-2 sm:mt-4"
-            >
-              {tracks.map((val, index) => {
-                return (
-                  <Link key={index} href={`/tracks/${val.id}?quarter=4`}>
-                    <MenuItem
-                    color={"GrayText"}
-                      className= "border-b"
-                      _hover={{ bg: "#e6e8f7" }}
-                      padding={"10px 20px"}
-                    >
-                      {val.name}
-                    </MenuItem>
+
+          <div
+            className={`flex items-center ${
+              customNavbar ? "text-black" : "text-white"
+            } space-x-4 md:space-x-6 sm:space-x-4 xs:space-x-1 font-semibold `}
+          >
+            <Link href={"/"} className="cursor-pointer">
+              <Button bgColor={'transparent'} _hover={{bg: 'transparent'}} className="text-lg sm:text-base xs:text-sm">Home</Button>
+            </Link>
+            <Menu>
+              <MenuButton
+                bgColor={'transparent'}
+                className="text-lg sm:text-base xs:text-sm"
+              >
+                Tracks <ChevronDownIcon />
+              </MenuButton>
+              <MenuList className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4">
+                {tracks.map((item, index) =>(
+                  <Link key={index} href={item.id}>
+                  <MenuItem color={"GrayText"}  className="border-b">
+                  {item.name}
+                  </MenuItem>
                   </Link>
-                );
-              })}
-            </MenuList>
-          </Menu>
-        </div>
-      </section>
-    </header>
+                ))}
+              </MenuList>
+            </Menu>
+          </div>
+        </section>
+      </header>
+    </ChakraProvider>
   );
 }
