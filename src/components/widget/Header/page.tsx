@@ -7,8 +7,13 @@ import { Button } from "@chakra-ui/react";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { ChakraProvider } from "@chakra-ui/react";
-
 import { images } from "../../../../public/constants";
+import {Poppins} from '@next/font/google'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400']
+})
 
 export default function Header() {
   const [customNavbar, setCustomNavbar] = useState(false);
@@ -43,12 +48,12 @@ export default function Header() {
       <header
         className={`${
           customNavbar ? "bg-[#ffffffe5]  backdrop-blur-xl" : "bg-[#021327] "
-        } w-full flex justify-center ${
+        } ${poppins.className} w-full flex justify-center ${
           customNavbar ? "sticky" : "relative"
         } top-0 navTransition ${customNavbar ? "z-20" : "z-0"}
        `}
       >
-        <section className="flex justify-between items-center w-[1280px] px-6 py-2">
+        <section className="flex justify-between items-center w-[1280px] px-6 md:px-4 sm:px-2 py-2">
           <Link href={"/"}>
             <Image
               className="w-32 md:w-28 xs:w-24"
@@ -61,20 +66,20 @@ export default function Header() {
 
           <div
             className={`flex items-center ${
-              customNavbar ? "text-black" : "text-white"
+              customNavbar ? "text-gray-800" : "text-white"
             } space-x-4 md:space-x-6 sm:space-x-4 xs:space-x-1 font-semibold `}
           >
             <Link href={"/"} className="cursor-pointer">
-              <Button bgColor={'transparent'} _hover={{bg: 'transparent'}} className="text-lg  xs:text-sm">Home</Button>
+              <Button bgColor={'transparent'} _hover={{bg: 'transparent'}} className="xs:text-sm">Home</Button>
             </Link>
             <Menu>
               <MenuButton
                 bgColor={'transparent'}
-                className="text-lg  xs:text-sm"
+                className="xs:text-sm"
               >
                 Tracks <ChevronDownIcon />
               </MenuButton>
-              <MenuList className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4">
+              <MenuList padding={'10px 0'} className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4">
                 {tracks.map((item, index) =>(
                   <Link key={index} href={item.id}>
                   <MenuItem color={"gray.700"}  className="border-b font-semibold">
