@@ -29,5 +29,17 @@
 
   .btngradient{
       background: linear-gradient(270deg, #44DA64 0%, #6366FF 100%)
-      /* linear-gradient(to right, #0EB7A3 0%, #09D58F 100%); */
+  }
+
+  .bgHeroBottom{
+    background: url('../../public/images/bg-hero-bottom.png');
+    background-position: contain;
+    background-repeat: no-repeat;
+  }
+
+  .text_gradient {
+    background: linear-gradient(to right, #6366FF 0%, #53e79c 60%, #44DA64 100%);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }

@@ -65,19 +65,19 @@ export default function Header() {
             } space-x-4 md:space-x-6 sm:space-x-4 xs:space-x-1 font-semibold `}
           >
             <Link href={"/"} className="cursor-pointer">
-              <Button bgColor={'transparent'} _hover={{bg: 'transparent'}} className="text-lg sm:text-base xs:text-sm">Home</Button>
+              <Button bgColor={'transparent'} _hover={{bg: 'transparent'}} className="text-lg  xs:text-sm">Home</Button>
             </Link>
             <Menu>
               <MenuButton
                 bgColor={'transparent'}
-                className="text-lg sm:text-base xs:text-sm"
+                className="text-lg  xs:text-sm"
               >
                 Tracks <ChevronDownIcon />
               </MenuButton>
               <MenuList className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4">
                 {tracks.map((item, index) =>(
                   <Link key={index} href={item.id}>
-                  <MenuItem color={"GrayText"}  className="border-b">
+                  <MenuItem color={"gray.700"}  className="border-b font-semibold">
                   {item.name}
                   </MenuItem>
                   </Link>
