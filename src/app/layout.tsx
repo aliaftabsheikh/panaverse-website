@@ -9,7 +9,7 @@ export const metadata = {
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '700', '900']
+  weight: ['200','400', '700', '900']
 })
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={poppins.className}>
         <Header />
         {children}

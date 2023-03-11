@@ -15,18 +15,17 @@ export default function Hero() {
 
         <section className="flex justify-between items-center gap-4 w-[1280px] px-6  md:px-4 sm:px-2 mt-10 md:flex-col sm:justify-around ">
           <div className="w-3/4 lg:w-1/2 md:w-full">
-            <h2 className="text-5xl lg:text-4xl font-bold text-white tracking-wide">
+            <h2 className="text-5xl lg:text-4xl xs:text-3xl font-bold text-white tracking-wide">
               Web 3.0 And <br /> Metaverse <br /> Development
             </h2>
-            <p className="mt-6 text-gray-400 font-thin">
+            <p className="mt-6 text-gray-400">
               Presidential Initiative for Artificial Intelligence and Computing
               (PIAIC)
             </p>
-            <p className="mt-4 ">
-              First two quarters are compulsary for everyone and remaining two
-              are the specialization in different domains
+            <p className="mt-4 font-thin">
+            All students must complete the first two quarters, and the remaining two are for specialization in different fields
             </p>
-            <button className="btngradient py-4 px-8 rounded-full mt-8 text-lg font-semibold">
+            <button className="btngradient py-4 px-8 rounded-full mt-8 text-lg font-semibold md:text-base">
               Apply Now
             </button>
           </div>

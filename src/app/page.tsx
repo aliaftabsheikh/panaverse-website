@@ -1,6 +1,7 @@
 "use client"
 
 import CourseBrief from "@/components/widget/CourseBrief/page";
+import CompulsoryQuarters from "@/components/widget/CompulsoryQuarters/page";
 import Hero from "@/components/widget/Hero/page";
 import Image from "next/image";
 import { images } from "../../public/constants";
@@ -13,6 +14,7 @@ export default function Home() {
     <Image className="w-screen bg-[#04182f]" src={images.heroWavy} alt="wavy-shape" />
     </div>
     <CourseBrief/>
+    <CompulsoryQuarters/>
     </>
   );
 }

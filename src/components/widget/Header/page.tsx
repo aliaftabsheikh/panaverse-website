@@ -70,12 +70,12 @@ export default function Header() {
             } space-x-4 md:space-x-6 sm:space-x-4 xs:space-x-1 font-semibold `}
           >
             <Link href={"/"} className="cursor-pointer">
-              <Button bgColor={'transparent'} _hover={{bg: 'transparent'}} className="xs:text-sm">Home</Button>
+              <Button className="xs:text-xs" bgColor={'transparent'} _hover={{bg: 'transparent'}} >Home</Button>
             </Link>
             <Menu>
               <MenuButton
                 bgColor={'transparent'}
-                className="xs:text-sm"
+                className="xs:text-xs"
               >
                 Tracks <ChevronDownIcon />
               </MenuButton>
