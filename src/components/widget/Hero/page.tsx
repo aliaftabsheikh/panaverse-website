@@ -16,7 +16,7 @@ export default function Hero() {
         <section className="flex justify-between items-center gap-4 w-[1280px] px-6  md:px-4 sm:px-2 mt-10 md:flex-col sm:justify-around ">
           <div className="w-3/4 lg:w-1/2 md:w-full">
             <h2 className="text-5xl lg:text-4xl xs:text-3xl font-bold text-white tracking-wide">
-              Web 3.0 And <br /> Metaverse <br /> Development
+              Web 3.0 And <br /> <span className="text_gradient">Metaverse</span> <br /> Development
             </h2>
             <p className="mt-6 text-gray-400">
               Presidential Initiative for Artificial Intelligence and Computing

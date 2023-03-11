@@ -67,15 +67,15 @@ export default function Header() {
           <div
             className={`flex items-center ${
               customNavbar ? "text-gray-800" : "text-white"
-            } space-x-4 md:space-x-6 sm:space-x-4 xs:space-x-1 font-semibold `}
+            } space-x-8 md:space-x-6 sm:space-x-4  font-semibold `}
           >
             <Link href={"/"} className="cursor-pointer">
-              <Button className="xs:text-xs" bgColor={'transparent'} _hover={{bg: 'transparent'}} >Home</Button>
+              <button className="sm:text-sm" >Home</button>
             </Link>
             <Menu>
               <MenuButton
                 bgColor={'transparent'}
-                className="xs:text-xs"
+                className="sm:text-sm"
               >
                 Tracks <ChevronDownIcon />
               </MenuButton>

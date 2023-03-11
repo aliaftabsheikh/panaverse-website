@@ -43,3 +43,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .specializedTrackBg{
+    background: url('../../public/images/specializedbg.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+  }

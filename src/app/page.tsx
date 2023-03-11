@@ -5,6 +5,7 @@ import CompulsoryQuarters from "@/components/widget/CompulsoryQuarters/page";
 import Hero from "@/components/widget/Hero/page";
 import Image from "next/image";
 import { images } from "../../public/constants";
+import SpecializedTracks from "@/components/widget/SpecializedTracks/page";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     </div>
     <CourseBrief/>
     <CompulsoryQuarters/>
+    <SpecializedTracks/>
     </>
   );
 }
