@@ -9,7 +9,7 @@ import aiIcon from "../images/AI.png";
 import geonomicsIcon from "../images/geonomics.png";
 import iotIcon from "../images/IOT.png";
 import networkIcon from "../images/network.png";
-import cloudIcon from "../images/business-investment-consultant-is-directing-audience_18660-439-removebg-preview.png";
+import cloudIcon from "../images/cloud_computing.png";
 
 export default {
   panaverseLogo,

@@ -19,7 +19,7 @@ function SpecializedTracks() {
           After completing the first three quarters the participants will select
           one or more specializations consisting of two courses each.
         </p>
-        <div className="grid grid-cols-3 gap-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 md:gap-4 m-auto w-full mt-10">
+        <div className="grid grid-cols-2 gap-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 md:gap-4 m-auto w-full mt-10">
           {specializedTracks.map((item, index) => (
             <SpecializationQuartersBrief
             key={index}
