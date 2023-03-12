@@ -6,6 +6,7 @@ import Hero from "@/components/widget/Hero/page";
 import Image from "next/image";
 import { images } from "../../public/constants";
 import SpecializedTracks from "@/components/widget/SpecializedTracks/page";
+import OutcomeBrief from "@/components/widget/OutcomeBrief/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
     <CourseBrief/>
     <CompulsoryQuarters/>
     <SpecializedTracks/>
+    <OutcomeBrief/>
     </>
   );
 }
