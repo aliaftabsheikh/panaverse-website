@@ -10,9 +10,7 @@ import geonomicsIcon from "../images/geonomics.png";
 import iotIcon from "../images/IOT.png";
 import networkIcon from "../images/network.png";
 import cloudIcon from "../images/cloud_computing.png";
-import Robot from "../images/Robots.png";
 import outComeImg from "../images/outcome.png";
-
 
 export default {
   panaverseLogo,
@@ -27,6 +25,5 @@ export default {
   iotIcon,
   networkIcon,
   cloudIcon,
-  Robot,
-  outComeImg
+  outComeImg,
 };

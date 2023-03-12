@@ -28,12 +28,12 @@ function OutcomeBrief() {
 
   return (
     <main className="bg-[#021327] flex justify-center">
-      <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 flex justify-between items-center gap-6 lg:flex-col-reverse lg:gap-2">
+      <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 flex justify-between items-center gap-6 lg:flex-col-reverse lg:gap-6">
         <div className="w-1/2 lg:w-full flex items-center">
           <Image className="lg:m-auto" src={images.outComeImg} alt="robot" />
         </div>
 
-        <div className="w-3/4 lg:w-full">
+        <div className="w-1/2 lg:w-full">
           <h2 className="text-5xl lg:text-4xl text_gradient font-bold py-3">
             The Outcome for Participants of the Program
           </h2>
