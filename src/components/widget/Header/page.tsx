@@ -19,7 +19,6 @@ export default function Header() {
   const [customNavbar, setCustomNavbar] = useState(false);
 
   function changeBackground() {
-    console.log(window.scrollY);
 
     if (typeof window !== undefined) {
       if (window.scrollY >= 40) {

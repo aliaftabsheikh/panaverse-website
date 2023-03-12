@@ -56,9 +56,10 @@ function OutcomeBrief() {
               >
                 <a
                   href={item.link}
-                  className="underline underline-offset-2 mt-1"
+                  className="underline underline-offset-4 mt-1"
+                  target="_blank"
                 >
-                  <p className="text-sm font-semibold">{item.text}</p>
+                  <p className="text-sm font-normal">{item.text}</p>
                 </a>
               </div>
             ))}
