@@ -2,7 +2,6 @@ import { specializedTracksData } from '@/types/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { images } from '../../../../public/constants'
 
 function SpecializationQuartersBrief({name, image, id}: specializedTracksData) {
   return (

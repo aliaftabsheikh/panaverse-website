@@ -33,7 +33,7 @@ export interface specializedTracksData {
   id: string;
   name: string;
   image: StaticImageData;
-  quarters: QuartersData[]
+  quarters?: QuartersData[]
 }
 
 export interface compulsoryQuartersData {
