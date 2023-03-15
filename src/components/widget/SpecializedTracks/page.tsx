@@ -26,6 +26,7 @@ function SpecializedTracks() {
               name={item.name}
               image={item.image}
               id={item.id}
+              quarters={item.quarters}
             />
           ))}
         </div>
