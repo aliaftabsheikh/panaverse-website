@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 export interface QuartersData {
   id: number,
   main_title: string,
-  duration_weeks: number, //weeks
+  duration_weeks: number, 
   description: string[],
   outline: {
       title: string,

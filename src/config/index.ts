@@ -480,7 +480,7 @@ export const CompulsaryQuartersData: QuartersData[] = [
     {
         id: 2,
         main_title: 'W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             'The objective of this course is to teach participants to develop customer-facing planet-scale Websites, Full-Stack Apps and templates, Dashboards, and Muti-Cloud Serverless APIs. By the end of the quarter, the participants will be able to develop and deploy web platforms like Facebook, Shopify, etc. The technologies covered in this course will include Next.js 13, Figma, Tailwind CSS, Chakra UI, tRPC, QraphQL, Prisma, Cockroachdb Serverless (PostgreSQL Compatible), AWS Serverless Technologies, and Cloud Development Kit for Terraform (CDKTF).'
         ],
@@ -823,7 +823,7 @@ export const CompulsaryQuartersData: QuartersData[] = [
     {
         id: 3,
         main_title: '$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             'The purpose of this course is to make dollars. You will build Full-Stack Next.js 13 Jamstack Templates and GraphQL APIs.'
         ],
@@ -889,7 +889,7 @@ const WMDQuartersData: QuartersData[] = [
     {
         id: 4,
         main_title: 'W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             'In this course you will learn how to develop Web 3.0 DApps, create a project, deploy it in production, write smart contracts, unit test them, and create user interfaces for them. We will also learn to develop ERC-20 and NFT tokens, DAOs, Oracles, etc.  Please note that in order to develop Web 3 applications you also need to build on top of Web 2.0 technologies which we have already covered in the previous quarters.'
         ],
@@ -1388,7 +1388,7 @@ const WMDQuartersData: QuartersData[] = [
 
         id: 5,
         main_title: 'MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             `The Web is the Metaverse. The metaverse requires an infrastructure that connects all of the metaverses so that we can travel between them. This is only achievable with open web-based metaverses. The internet and its browsers are magical. Federated but linked experiences connect pages, people, technology, businesses, standards, and nations. It's unlike anything else. The metaverse should replicate the best qualities of the web - it should just be the web. We just have to extend online responsive design from mobile to desktop to 3D, Augmented Reality, and Virtual Reality. This course will teach you how to build the Open Social Spatial Web with WebXR and WebGPU technologies.`
         ],
@@ -1596,7 +1596,7 @@ const AIQuartersData: QuartersData[] = [
     {
         id: 4,
         main_title: 'AI-351: Developing Planet-Scale Intelligent APIs and Python Programming',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             `Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. The AI and Deep Learning Specialization is a foundational program that will aid in your comprehension of deep learning's potential, difficulties, and effects as well as equip you to take part in the creation of cutting-edge AI technology.`,
             `We will start this course by understanding the fundamentals and use cases for AI and move on to building next-gen intelligent apps using OpenAI’s powerful models and Next.js 13.`,
@@ -1676,7 +1676,7 @@ const AIQuartersData: QuartersData[] = [
     {
         id: 5,
         main_title: 'AI-361: Deep Learning and MLOps',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             `This course will help you understand the capabilities, challenges, and consequences of deep learning and prepare you to participate in the development of leading-edge AI technology. We will finish the program by learning how to envision, create, and maintain integrated systems that run constantly in production. Production systems must manage constantly changing data, in stark contrast to typical machine learning modeling. The production system must also operate continuously at the lowest possible cost while delivering the highest possible performance.`
         ],
@@ -1738,7 +1738,7 @@ const CNCQuartersData: QuartersData[] = [
     {
         id: 4,
         main_title: 'CN-351: Certified Kubernetes Application Developer (CKAD)',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             `Cloud-native architecture and technologies are an approach to designing, constructing, and operating workloads that are built in the cloud and take full advantage of the cloud computing model. Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.`,
             `These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.`,
@@ -1774,7 +1774,7 @@ const CNCQuartersData: QuartersData[] = [
     {
         id: 5,
         main_title: 'CN-361: Developing Multi-Cloud Apps using CDK for Terraform',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             `Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies. This simplifies management and orchestration for large-scale, multi-cloud infrastructures.`,
             `Cloud Development Kit for Terraform (CDKTF) allows you to use familiar programming languages to define and provision infrastructure. This gives you access to the entire Terraform ecosystem without learning HashiCorp Configuration Language (HCL) and lets you leverage the power of your existing toolchain for testing, dependency management, etc.`,
@@ -1817,7 +1817,7 @@ const IOTQuartersData: QuartersData[] = [
     {
         id: 4,
         main_title: 'AC-351: Ambient Computing with Voice Assistants and Matter Devices',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             `Ambient computing, also commonly referred to as ubiquitous computing, is the concept of blending computing power into our everyday lives in a way that is embedded into our surroundings - invisible but useful. In a multi-device world, people don't want to spend their life fussing with technology. An ambient approach gets the tech out of your way so you can live your life while getting the help you need. It doesn't matter what device you're using, what context you're in, whether you're talking, typing, or tapping. The technology in your life works together seamlessly. Ambient computing uses all aspects of modern-day technology, including voice assistants, artificial intelligence, sensors, connectivity, cloud computing and more.`,
             `If you were thinking that the IoT and ambient computing sound a lot alike, you aren't wrong; the two concepts are intertwined. IoT refers to the vast array of devices that connect to the internet to optimize their functionality, like smart sensors and smart speakers: ambient computing builds on that. Ambient computing focuses on the interaction between these devices once they are connected.`,
@@ -1859,7 +1859,7 @@ const IOTQuartersData: QuartersData[] = [
     {
         id: 5,
         main_title: 'AC-361: Embedded Programming using C and Rust',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [
             `This is an introductory course about using the C and Rust Programming Languages on "Bare Metal" embedded systems, such as Microcontrollers. We will start by introducing embedded systems and move on to learn the  C++ and Rust programming languages. We'll learn about basic programming concepts using C and Rust, then we will explore key concepts in electronics, microcontrollers, and embedded programming. It is a fast-paced,  thorough introduction to programming with C and Rust that will have you writing programs, solving problems, burning your code on microcontrollers,  playing with GPIOs, and making things that work in no time.`
         ],
@@ -2302,7 +2302,7 @@ const GBSQuartersData: QuartersData[] = [
     {
         id: 4,
         main_title: 'Bio-351: Python for Biologists',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: ['This course will focus on learning the basics of the Python programming language through genomics examples.'],
         outline: [
             {
@@ -2322,7 +2322,7 @@ const GBSQuartersData: QuartersData[] = [
     {
         id: 5,
         main_title: 'Bio-361: Bioinformatics with Python',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: ['In this course we will discover modern, next-generation sequencing libraries from the powerful Python ecosystem to perform cutting-edge research and analyze large amounts of biological data.'],
         outline: [
             {
@@ -2360,7 +2360,7 @@ export const NPSQuartersData: QuartersData[] = [
     {
         id: 4,
         main_title: 'NPA-351: CCNA 200-301 Certification',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: ['This course will focus on learning the basics of the networking and preparing for the new Cisco Certified Network Associate (CCNA) exam. This comprehensive course focuses on the solutions and technologies needed to implement and administer a broad range of modern networking and IT infrastructure.'],
         outline: [
             {
@@ -2380,7 +2380,7 @@ export const NPSQuartersData: QuartersData[] = [
     {
         id: 5,
         main_title: 'NPA-361: Network Programmability and Automation',
-        duration_weeks: 13, //weeks
+        duration_weeks: 13, 
         description: [`Traditional network management techniques can't be effectively automated and don't scale well. By implementing network programmability based on Application Programming Interfaces, this course will assist in overcoming issues of the future and help you develop the skills required for the Next-Generation Network Engineer.`],
         outline: [
             {

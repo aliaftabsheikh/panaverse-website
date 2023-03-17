@@ -8,18 +8,17 @@ import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { ChakraProvider } from "@chakra-ui/react";
 import { images } from "../../../../public/constants";
-import {Poppins} from '@next/font/google'
+import { Poppins } from "@next/font/google";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400']
-})
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function Header() {
   const [customNavbar, setCustomNavbar] = useState(false);
 
   function changeBackground() {
-
     if (typeof window !== undefined) {
       if (window.scrollY >= 40) {
         setCustomNavbar(true);
@@ -66,24 +65,39 @@ export default function Header() {
           <div
             className={`flex items-center ${
               customNavbar ? "text-gray-800" : "text-white"
-            } space-x-8 md:space-x-6 sm:space-x-4  font-semibold `}
+            } space-x-2  sm:space-x-0  font-semibold `}
           >
             <Link href={"/"} className="cursor-pointer">
-              <button className="sm:text-sm" >Home</button>
+              <Button
+                className="sm:text-sm"
+                bgColor={"transparent"}
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+              >
+                Home
+              </Button>
             </Link>
             <Menu>
               <MenuButton
-                bgColor={'transparent'}
+                as={Button}
+                bgColor={"transparent"}
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+                width='auto'
                 className="sm:text-sm"
               >
                 Tracks <ChevronDownIcon />
               </MenuButton>
-              <MenuList padding={'10px 0'} className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4">
-                {tracks.map((item, index) =>(
+              <MenuList className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4">
+                {tracks.map((item, index) => (
                   <Link key={index} href={item.id}>
-                  <MenuItem color={"gray.700"}  className="border-b font-semibold">
-                  {item.name}
-                  </MenuItem>
+                    <MenuItem
+                    padding={'10px 20px'}
+                      color={"gray.700"}
+                      className="border-b font-semibold"
+                    >
+                      {item.name}
+                    </MenuItem>
                   </Link>
                 ))}
               </MenuList>
