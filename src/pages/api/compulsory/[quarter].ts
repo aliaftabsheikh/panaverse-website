@@ -8,8 +8,6 @@ export default async function handler(
   const filteredData = CompulsaryQuartersData.find(
     (item) => item.id === Number(req.query.quarter)
   );
-
-  console.log(filteredData);
   
   res.status(200).json(filteredData);
 }

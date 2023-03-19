@@ -2407,7 +2407,7 @@ export const specializedTracks: specializedTracksData[] = [
       id: "wmd",
       name: "Web3 and Metaverse",
       image: images.web3Icon,
-      quarters: [
+      quarter: [
         ...WMDQuartersData
       ]
   },
@@ -2415,7 +2415,7 @@ export const specializedTracks: specializedTracksData[] = [
       id: "cnc",
       name: "Cloud-Native Computing",
       image: images.cloudIcon,
-      quarters: [
+      quarter: [
         ...CNCQuartersData
       ]
   },
@@ -2423,7 +2423,7 @@ export const specializedTracks: specializedTracksData[] = [
       id: "ai",
       name: "Artificial Intelligence and Deep Learning",
       image: images.aiIcon,
-      quarters:[
+      quarter:[
      ...AIQuartersData     
     ]
   },
@@ -2431,7 +2431,7 @@ export const specializedTracks: specializedTracksData[] = [
       id: "iot",
       name: "Ambient Computing and IoT",
       image: images.iotIcon,
-      quarters:[
+      quarter:[
        ...IOTQuartersData   
       ]
   },
@@ -2439,7 +2439,7 @@ export const specializedTracks: specializedTracksData[] = [
       id: "gbs",
       name: "Genomics and Bioinformatics",
       image: images.geonomicsIcon,
-      quarters:[
+      quarter:[
        ...GBSQuartersData   
       ]
   },
@@ -2447,7 +2447,7 @@ export const specializedTracks: specializedTracksData[] = [
       id: "npa",
       name: "Network Programmability and Automation",
       image: images.networkIcon,
-      quarters:[
+      quarter:[
        ...NPSQuartersData   
       ]
   },

@@ -11,6 +11,7 @@ import iotIcon from "../images/IOT.png";
 import networkIcon from "../images/network.png";
 import cloudIcon from "../images/cloud_computing.png";
 import outComeImg from "../images/outcome.png";
+import courses_main from "../images/courses-main.png";
 
 export default {
   panaverseLogo,
@@ -26,4 +27,5 @@ export default {
   networkIcon,
   cloudIcon,
   outComeImg,
+  courses_main
 };
