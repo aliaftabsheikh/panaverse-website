@@ -5,7 +5,7 @@ import { images } from "../../../../public/constants";
 export default function Hero() {
   return (
     <>
-      <main className="w-full text-white flex justify-center items-center py-4 bg-[#021327] ">
+      <main className="w-full text-white flex justify-center items-center py-4 bg-primary-color">
         <Image
           className="absolute top-0 left-0 z-10 lg:w-3/4 md:w-1/2 sm:hidden"
           src={images.heroBg} 

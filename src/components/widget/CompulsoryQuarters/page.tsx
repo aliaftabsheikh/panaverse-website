@@ -4,7 +4,7 @@ import CompulsoryQuartersBrief from "../../shared/CompulsoryQuartersBrief/page";
 
 function CompulsoryQuarters() {
   return (
-    <main className="bg-[#021327] flex justify-center">
+    <main className="bg-primary-color flex justify-center">
       <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16">
         <div className="flex gap-4 xs:flex-col xs:gap-1">
           <h2 className="text-5xl lg:text-4xl text_gradient font-bold tracking-wide">

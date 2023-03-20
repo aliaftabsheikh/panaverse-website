@@ -13,6 +13,10 @@ import { images } from "../../../../public/constants";
 //   }
 //   return res.json();
 // }
+interface dataType {
+  compulsoryQuarter: string,
+  data: QuartersData
+}
 
 async function fetchData(params: any) {
   const res = await fetch(
@@ -28,34 +32,22 @@ async function fetchData(params: any) {
 async function Page({ params }: { params: { quarter: string } }) {
   const data: QuartersData = await fetchData(params);
 
-  if (!data) {
-    return (
-      <div className="flex flex-col">
-        <div className="flex justify-center items-center py-28">
-          <h1 className="text-2xl ">Track Not Found !</h1>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <>
-      {data ? (
-        <main className="bg-[#021327] flex justify-center">
-          <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16">
-            <Image src={images.courses_main} />
-
-            <h1>{data.main_title}</h1>
-            <p>{data.description}</p>
-          </section>
-        </main>
-      ) : (
-        <div className="flex flex-col">
-          <div className="flex justify-center items-center py-28">
-            <h1 className="text-2xl ">Track Not Found !</h1>
+      <main className="bg-primary-color flex justify-center">
+        <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 flex gap-6 justify-between items-center">
+          <div>
+          <h1>{data.main_title}</h1>
+          <p>{data.id}</p>
           </div>
-        </div>
-      )}
+          <div className="">
+          <Image src={images.courses_main} alt="tech-circle" />
+          </div>
+
+          
+        </section>
+      </main>
     </>
   );
 }

@@ -5,7 +5,7 @@ import { images } from "../../../../public/constants";
 function CourseBrief() {
   return (
     <>
-      <main className="bg-[#04182f] flex justify-center">
+      <main className="bg-secondary-color flex justify-center">
         <section className="py-16 w-[1280px] px-6 md:px-4 sm:px-2 text-white">
             <h2 className="text-2xl font-bold sm:text-xl">
               The Program in a Nutshell: <span className="text_gradient">Earn While You Learn</span>

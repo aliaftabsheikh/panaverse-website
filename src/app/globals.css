@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+:root{
+  --primary-color: #021327;
+  --secondary-color: #04182f;
+}
+
 
 
   .navTransition{

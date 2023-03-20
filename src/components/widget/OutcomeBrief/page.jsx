@@ -27,7 +27,7 @@ function OutcomeBrief() {
   ];
 
   return (
-    <main className="bg-[#021327] flex justify-center">
+    <main className="bg-primary-color flex justify-center">
       <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 flex justify-between items-center gap-6 lg:flex-col-reverse lg:gap-6">
         <div className="w-1/2 lg:w-full flex items-center">
           <Image className="lg:m-auto" src={images.outComeImg} alt="robot" />
