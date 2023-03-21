@@ -2421,12 +2421,12 @@ export const specializedTracks: specializedTracksData[] = [
   },
   {
       id: "ai",
-      name: "Artificial Intelligence and Deep Learning",
+      name: "Artificial Intelligence (AI) and Deep Learning",
       image: images.aiIcon,
       quarter:[
      ...AIQuartersData     
     ]
-  },
+  },    
   {
       id: "iot",
       name: "Ambient Computing and IoT",
