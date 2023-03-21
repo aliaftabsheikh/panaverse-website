@@ -20,7 +20,7 @@ interface dataType {
 
 async function fetchData(params: any) {
   const res = await fetch(
-    `https://panaverse-silk.vercel.app///api/compulsory/${params.quarter}`,
+    `https://panaverse-silk.vercel.app/api/compulsory/${params.quarter}`,
     { cache: "no-store" }
   );
   if (!res.ok) {
