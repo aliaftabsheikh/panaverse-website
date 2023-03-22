@@ -58,7 +58,7 @@ function Footer() {
             <div className="mt-4">
               {specializedTracks.map((item, index) => (
                 <Link
-                  href={`track/${item.id}`}
+                  href={`tracks/${item.id}?quarter=4`}
                   className="text-white font-light mt-1 hover:text-[#44DA64]"
                   key={item.id}
                 >

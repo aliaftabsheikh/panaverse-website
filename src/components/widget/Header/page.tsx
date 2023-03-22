@@ -88,9 +88,9 @@ export default function Header() {
               >
                 Tracks <ChevronDownIcon />
               </MenuButton>
-              <MenuList className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4">
+              <MenuList className="xs:w-screen xs:text-sm xs:rounded-none xs:mt-4 z-40">
                 {tracks.map((item, index) => (
-                  <Link key={index} href={item.id}>
+                  <Link key={index} href={`tracks/${item.id}?quarter=4`}>
                     <MenuItem
                     padding={'10px 20px'}
                       color={"gray.700"}
