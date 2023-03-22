@@ -1,4 +1,6 @@
+import CourseDetailContent from "@/components/shared/CourseDetailContent/page";
 import CourseDetailCover from "@/components/shared/CourseDetailCover/page";
+import CourseQuartersCard from "@/components/shared/CourseQuartersCard/page";
 import { QuartersData } from "@/types/types";
 import React from "react";
 
@@ -20,14 +22,32 @@ async function getData(params: any, searchParams: any) {
 
 async function Page({ params, searchParams }: any) {
   const data: dataType = await getData(params, searchParams);
-  console.log(data.trackName);
+  console.log(params.track);
 
   return (
-    <main className="bg-primary-color flex justify-center">
-      <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 ">
-        <CourseDetailCover trackName={data.trackName} id={data?.data.id} />
-      </section>
-    </main>
+    <>
+      <main className="bg-primary-color flex justify-center">
+        <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 ">
+          <CourseDetailCover trackName={data.trackName} id={data?.data.id} />
+        </section>
+      </main>
+
+      {/* Content-section */}
+
+      <main className="flex justify-center bg-secondary-color">
+        <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 ">
+          <div className="flex justify-between gap-8 md:flex-col-reverse ">
+            <CourseDetailContent data={data?.data}/>
+
+            <CourseQuartersCard
+              trackName={data?.trackName}
+              data={data?.data}
+              track={params?.track}
+            />
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
 

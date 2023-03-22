@@ -19,7 +19,7 @@ function CourseDetailCover({
             {trackName ? "Specialization" : "Specializations"}
           </p>
 
-        <div className="bg-secondary-color w-full border border-gray-800 mt-8 rounded-lg">
+        <div className="bg-secondary-color w-full border border-gray-800   mt-8 rounded-lg">
           <div className="p-6">
             <p className="text-2xl font-medium sm:text-xl">
               Quarter : &nbsp;{id}

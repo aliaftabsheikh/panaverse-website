@@ -83,7 +83,7 @@ export default function Header() {
                 bgColor={"transparent"}
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
-                width='auto'
+                width='auto'  
                 className="sm:text-sm"
               >
                 Tracks <ChevronDownIcon />
