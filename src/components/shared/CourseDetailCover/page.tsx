@@ -12,12 +12,12 @@ function CourseDetailCover({
   return (
     <div className="flex justify-between items-center lg:flex-col gap-6">
       <div className="text-white w-1/2 lg:w-full">
-          <p className="text-5xl md:text-4xl xs:text-2xl leading-tight tracking-wide text_gradient font-bold">
-            {trackName ? trackName : "Common In All"}
-          </p>
-          <p className="text-5xl md:text-4xl xs:text-2xl tracking-wide font-bold pt-2 leading-tight">
-            {trackName ? "Specialization" : "Specializations"}
-          </p>
+        <p className="text-5xl md:text-4xl xs:text-2xl leading-tight tracking-wide text_gradient font-bold">
+          {trackName ? trackName : "Common In All"}
+        </p>
+        <p className="text-5xl md:text-4xl xs:text-2xl tracking-wide font-bold pt-2 leading-tight">
+          {trackName ? "Specialization" : "Specializations"}
+        </p>
 
         <div className="bg-secondary-color w-full border border-gray-800   mt-8 rounded-lg">
           <div className="p-6">

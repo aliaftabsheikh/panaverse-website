@@ -12,7 +12,7 @@ function CourseQuartersCard({
   track?: string;
 }) {
   return (
-    <div className="w-[350px] md:w-full h-fit md:border border-zinc-800 md:rounded-lg flex-shrink-0 sticky md:relative md:top-0 top-32">
+    <div className="w-[350px] lg:w-[250px] md:w-full h-fit md:border border-zinc-800 md:rounded-lg flex-shrink-0 sticky md:relative md:top-0 top-32">
       <div className="h-fit rounded-lg p-3 bg-slate-800">
         <h1 className="text-2xl text_gradient font-bold">
           Detail Course Syllabus

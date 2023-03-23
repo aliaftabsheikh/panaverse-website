@@ -1,5 +1,3 @@
-"use client"
-
 import CourseBrief from "@/components/widget/CourseBrief/page";
 import CompulsoryQuarters from "@/components/widget/CompulsoryQuarters/page";
 import Hero from "@/components/widget/Hero/page";

@@ -5,7 +5,7 @@ import React from "react";
 function SpecializedTracks() {
   return (
     <main className="bg-[#04182f] flex justify-center">
-      <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 specializedTrackBg">
+      <section className="w-[1280px] px-6 md:px-4 sm:px-2 py-16 ">
         <div className="flex gap-4 xs:flex-col xs:gap-1">
           <h2 className="text-5xl lg:text-4xl text_gradient font-bold tracking-wide">
             Specialized
@@ -19,7 +19,7 @@ function SpecializedTracks() {
           After completing the first three quarters the participants will select
           one or more specializations consisting of two courses each.
         </p>
-        <div className="grid grid-cols-2 gap-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 md:gap-4 m-auto w-full mt-10">
+        <div className="grid grid-cols-3 gap-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 md:gap-4 m-auto w-full mt-10">
           {specializedTracks.map((item, index) => (
             <SpecializationQuartersBrief
             key={index}
