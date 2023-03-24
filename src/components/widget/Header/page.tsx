@@ -45,7 +45,7 @@ export default function Header() {
     <ChakraProvider>
       <header
         className={`${
-          customNavbar ? "bg-[#f5f7fad5]  backdrop-blur-xl" : "bg-primary-color"
+          customNavbar ? "bg-[#3f3f5f9c]  backdrop-blur-xl" : "bg-primary-color"
         } ${poppins.className} w-full flex justify-center ${
           customNavbar ? "sticky" : "relative"
         } top-0 navTransition ${customNavbar ? "z-20" : "z-0"}
@@ -64,7 +64,7 @@ export default function Header() {
 
           <div
             className={`flex items-center ${
-              customNavbar ? "text-gray-800" : "text-white"
+              customNavbar ? "text-gray-200" : "text-white"
             } space-x-2  sm:space-x-0  font-semibold `}
           >
             <Link href={"/"} className="cursor-pointer">

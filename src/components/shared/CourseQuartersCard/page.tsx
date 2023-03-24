@@ -13,7 +13,7 @@ function CourseQuartersCard({
 }) {
   return (
     <div className="w-[350px] lg:w-[250px] md:w-full h-fit md:border border-zinc-800 md:rounded-lg flex-shrink-0 sticky md:relative md:top-0 top-32">
-      <div className="h-fit rounded-lg p-3 bg-slate-800">
+      <div className="h-fit rounded-lg p-3 bg-primary-color border border-gray-600">
         <h1 className="text-2xl text_gradient font-bold">
           Detail Course Syllabus
         </h1>
@@ -25,18 +25,28 @@ function CourseQuartersCard({
 
         <div className="mt-4">
           {[1, 2, 3].map((item, index) => (
-            <Link className="flex gap-8 items-center pt-4" key={index} href={`compulsory/${item}`}>
-                <span className="w-10 h-10 p-2 rounded-md btngradient text-center text-lg font-bold">{item}</span>
-              <p className="text-xl text-gray-200 ">
-                Quarter : &nbsp;{item}
-              </p>
+            <Link
+              className="flex gap-8 items-center pt-4"
+              key={index}
+              href={`compulsory/${item}`}
+            >
+              <span className="w-10 h-10 p-2 rounded-md btngradient text-center text-lg font-bold">
+                {item}
+              </span>
+              <p className="text-xl text-gray-200 ">Quarter : &nbsp;{item}</p>
             </Link>
           ))}
           {trackName && (
             <div>
               {[4, 5].map((item, index) => (
-                <Link className="flex gap-8 items-center pt-4" key={index} href={`/tracks/${track}?quarter=${item}`}>
-                    <span className="w-10 h-10 p-2 rounded-md btngradient text-center text-lg font-bold">{item}</span>
+                <Link
+                  className="flex gap-8 items-center pt-4"
+                  key={index}
+                  href={`/tracks/${track}?quarter=${item}`}
+                >
+                  <span className="w-10 h-10 p-2 rounded-md btngradient text-center text-lg font-bold">
+                    {item}
+                  </span>
                   <p className="text-xl text-gray-200">
                     Quarter : &nbsp;{item}
                   </p>
