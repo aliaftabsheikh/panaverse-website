@@ -45,7 +45,7 @@ export default function Header() {
     <ChakraProvider>
       <header
         className={`${
-          customNavbar ? "bg-[#3f3f5f9c]  backdrop-blur-xl" : "bg-primary-color"
+          customNavbar ? "bg-[#021327e0]  backdrop-blur-xl" : "bg-primary-color"
         } ${poppins.className} w-full flex justify-center ${
           customNavbar ? "sticky" : "relative"
         } top-0 navTransition ${customNavbar ? "z-20" : "z-0"}
@@ -56,7 +56,7 @@ export default function Header() {
             <Image
               className="w-32 md:w-28 xs:w-24"
               src={
-                customNavbar ? images.panaverseLogo : images.panaverseLogoWhite
+              images.panaverseLogoWhite
               }
               alt="panaverse-logo"
             />
