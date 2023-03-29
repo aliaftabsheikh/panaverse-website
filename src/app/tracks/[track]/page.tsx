@@ -20,8 +20,6 @@ async function getData(params: any, searchParams: any) {
   return res.json();
 }
 
-
-
 async function Page({ params, searchParams }: any) {
   const data: dataType = await getData(params, searchParams);
 
@@ -54,7 +52,6 @@ async function Page({ params, searchParams }: any) {
 
             <CourseQuartersCard
               trackName={data?.trackName}
-              data={data?.data}
               track={params?.track}
             />
           </div>

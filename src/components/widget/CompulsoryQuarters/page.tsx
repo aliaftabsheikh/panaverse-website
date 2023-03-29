@@ -24,11 +24,13 @@ function CompulsoryQuarters() {
           </p>
         </div>
         <div className="grid grid-cols-3 gap-8 lg:grid-cols-2 md:grid-cols-1 md:gap-4 m-auto w-full">
-{
-    compulsoryQuartersOutline.map((item, index)=>(
-        <CompulsoryQuartersBrief key={index} val={item.id} desc={item.description} />
-    ))
-}
+          {compulsoryQuartersOutline.map((item, index) => (
+            <CompulsoryQuartersBrief
+              key={index}
+              val={item.id}
+              desc={item.description}
+            />
+          ))}
         </div>
       </section>
     </main>

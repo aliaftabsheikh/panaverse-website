@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { images } from "../../../../public/constants";
 
@@ -25,9 +26,11 @@ export default function Hero() {
             <p className="mt-4 font-thin">
             All students must complete the first two quarters, and the remaining two are for specialization in different fields
             </p>
+            <Link href="https://www.piaic.org/" target="_blank">
             <button className="btngradient py-4 px-8 rounded-full mt-8 text-lg font-semibold md:text-base">
               Apply Now
             </button>
+            </Link>
           </div>
 
           <div className="w-1/2 md:w-3/4 sm:w-2/3 xs:w-full items-center flex justify-center">

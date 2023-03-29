@@ -9,14 +9,18 @@ import OutcomeBrief from "@/components/widget/OutcomeBrief/page";
 export default function Home() {
   return (
     <>
-    <Hero/>
-    <div>
-    <Image className="w-screen bg-[#04182f]" src={images.heroWavy} alt="wavy-shape" />
-    </div>
-    <CourseBrief/>
-    <CompulsoryQuarters/>
-    <SpecializedTracks/>
-    <OutcomeBrief/>
+      <Hero />
+      <div>
+        <Image
+          className="w-screen bg-[#04182f]"
+          src={images.heroWavy}
+          alt="wavy-shape"
+        />
+      </div>
+      <CourseBrief />
+      <CompulsoryQuarters />
+      <SpecializedTracks />
+      <OutcomeBrief />
     </>
   );
 }

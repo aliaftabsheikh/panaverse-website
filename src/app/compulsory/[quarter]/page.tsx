@@ -1,17 +1,13 @@
-
 import CourseDetailContent from "@/components/shared/CourseDetailContent/page";
 import CourseDetailCover from "../../../components/shared/CourseDetailCover/page";
 import CourseQuartersCard from "@/components/shared/CourseQuartersCard/page";
 import { QuartersData } from "@/types/types";
-import Image from "next/image";
 import React from "react";
-import { redirect } from 'next/navigation';
-
+import { redirect } from "next/navigation";
 
 async function fetchData(params: any) {
-
-  if (params.quarter > '3') {
-    redirect('tracks/wmd?quarter=4')
+  if (params.quarter > "3") {
+    redirect("tracks/wmd?quarter=4");
   }
 
   const res = await fetch(
@@ -24,13 +20,8 @@ async function fetchData(params: any) {
   return res.json();
 }
 
-
-
 async function Page({ params }: { params: { quarter: string } }) {
   const data: QuartersData = await fetchData(params);
-
-
-  
 
   return (
     <>
@@ -49,7 +40,7 @@ async function Page({ params }: { params: { quarter: string } }) {
           <div className="flex justify-between gap-8 lg:flex-col-reverse ">
             <CourseDetailContent data={data} />
 
-            <CourseQuartersCard data={data} />
+            <CourseQuartersCard />
           </div>
         </section>
       </main>

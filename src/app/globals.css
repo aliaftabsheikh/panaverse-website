@@ -11,9 +11,7 @@
 
 
   .navTransition{
-    transition: 0.2s ease-in-out;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.7s ease-in-out;
   }
 
 

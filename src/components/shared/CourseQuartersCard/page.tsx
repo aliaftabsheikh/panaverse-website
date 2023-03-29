@@ -4,11 +4,9 @@ import React from "react";
 
 function CourseQuartersCard({
   trackName,
-  data,
   track,
 }: {
   trackName?: string;
-  data: QuartersData;
   track?: string;
 }) {
   return (

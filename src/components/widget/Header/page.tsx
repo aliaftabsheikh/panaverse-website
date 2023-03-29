@@ -20,7 +20,7 @@ export default function Header() {
 
   function changeBackground() {
     if (typeof window !== undefined) {
-      if (window.scrollY >= 40) {
+      if (window.scrollY >= 180) {
         setCustomNavbar(true);
       } else {
         setCustomNavbar(false);
@@ -55,9 +55,7 @@ export default function Header() {
           <Link href={"/"}>
             <Image
               className="w-32 md:w-28 xs:w-24"
-              src={
-              images.panaverseLogoWhite
-              }
+              src={images.panaverseLogoWhite}
               alt="panaverse-logo"
             />
           </Link>
@@ -83,7 +81,7 @@ export default function Header() {
                 bgColor={"transparent"}
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
-                width='auto'  
+                width="auto"
                 className="sm:text-sm"
               >
                 Tracks <ChevronDownIcon />
@@ -92,7 +90,7 @@ export default function Header() {
                 {tracks.map((item, index) => (
                   <Link key={index} href={`tracks/${item.id}?quarter=4`}>
                     <MenuItem
-                    padding={'10px 20px'}
+                      padding={"10px 20px"}
                       color={"gray.700"}
                       className="border-b font-semibold"
                     >
