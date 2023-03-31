@@ -18,7 +18,7 @@ function SpecializationQuartersBrief({
             src={image}
             alt="web3Icon"
           />
-          <p className="text-white mt-2 text-center md:text-lg font-medium truncate w-full">
+          <p className="text-white mt-2 text-center md:text-lg font-medium min-md:truncate min-md:w-full">
             {name}
           </p>
         </div>
